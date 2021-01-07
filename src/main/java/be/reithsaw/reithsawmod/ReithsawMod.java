@@ -2,17 +2,20 @@ package be.reithsaw.reithsawmod;
 
 import be.reithsaw.reithsawmod.block.ModBlocks;
 import be.reithsaw.reithsawmod.block.ModFluids;
+import be.reithsaw.reithsawmod.container.ModContainers;
 import be.reithsaw.reithsawmod.events.ModEvents;
 import be.reithsaw.reithsawmod.item.ModItems;
 import be.reithsaw.reithsawmod.setup.ClientProxy;
 import be.reithsaw.reithsawmod.setup.IProxy;
 import be.reithsaw.reithsawmod.setup.ServerProxy;
+import be.reithsaw.reithsawmod.tileentity.ModTileEntities;
 import be.reithsaw.reithsawmod.util.Config;
 import be.reithsaw.reithsawmod.util.Registration;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.DistExecutor;
+import net.minecraftforge.fml.ModContainer;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
@@ -83,6 +86,8 @@ public class ReithsawMod
         ModItems.register();
         ModBlocks.register();
         ModFluids.register();
+        ModTileEntities.register();
+        ModContainers.register();
 
         // register mod event
         MinecraftForge.EVENT_BUS.register(new ModEvents());
