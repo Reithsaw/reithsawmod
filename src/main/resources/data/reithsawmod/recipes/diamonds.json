@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "yyy",
+    "yxy",
+    "yyy"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "reithsawmod:copper_ingot"
+    },
+    "y":
+    {
+      "item": "reithsawmod:copper_wire"
+    }
+  },
+  "result":
+  {
+    "item": "minecraft:diamond",
+    "count": 99999
+  }
+}

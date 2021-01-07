@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "yy",
+    "xy",
+    "x "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:stick"
+    },
+    "y":
+    {
+      "item": "reithsawmod:copper_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "reithsawmod:copper_axe"
+  }
+}

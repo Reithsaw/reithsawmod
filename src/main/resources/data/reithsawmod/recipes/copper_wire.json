@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "reithsawmod:copper_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "reithsawmod:copper_wire"
+  }
+}

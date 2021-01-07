@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "reithsawmod:block/copper_slab" },
+    "type=double": { "model": "reithsawmod:block/copper_block" },
+    "type=top": {"model": "reithsawmod:block/copper_slab_top" }
+  }
+}

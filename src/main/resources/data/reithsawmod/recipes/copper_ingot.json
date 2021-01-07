@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "",
+    "ingredients":
+    [
+        {"item": "reithsawmod:copper_block"}
+    ],
+    "result":
+    {
+        "item": "reithsawmod:copper_ingot",
+        "count": 9
+    }
+}

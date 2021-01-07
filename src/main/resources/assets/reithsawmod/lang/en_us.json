@@ -1,0 +1,30 @@
+{
+  "item.reithsawmod.copper_ingot": "Copper Ingot",
+  "item.reithsawmod.copper_wire": "Copper Wire",
+  "item.reithsawmod.coppered_apple": "Coppered Apple",
+
+  "item.reithsawmod.copper_shovel": "Copper Shovel",
+  "item.reithsawmod.copper_axe": "Copper Axe",
+  "item.reithsawmod.copper_hoe": "Copper Hoe",
+  "item.reithsawmod.copper_spickaxe": "Copper Pickaxe",
+  "item.reithsawmod.copper_sword": "Copper Sword",
+
+  "item.reithsawmod.copper_helmet": "Copper Helmet",
+  "item.reithsawmod.copper_chestplate": "Copper Chestplate",
+  "item.reithsawmod.copper_leggings": "Copper Leggings",
+  "item.reithsawmod.copper_boots": "Copper boots",
+
+  "block.reithsawmod.copper_stairs": "Copper Stairs",
+  "block.reithsawmod.copper_fence": "Copper Fence",
+  "block.reithsawmod.copper_fence_gate": "Copper Fence Gate",
+  "block.reithsawmod.copper_button": "Copper Button",
+  "block.reithsawmod.copper_pressure_plate": "Copper Pressure Plate",
+  "block.reithsawmod.copper_slab": "Copper Slab",
+
+
+  "block.reithsawmod.copper_block": "Copper Block",
+  "block.reithsawmod.copper_ore": "Copper Ore",
+
+  "itemGroup.reithsawTab": "Reithsaw Tab"
+
+}
