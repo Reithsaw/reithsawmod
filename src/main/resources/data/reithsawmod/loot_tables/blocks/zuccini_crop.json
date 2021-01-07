@@ -11,14 +11,14 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "conditions": "minecraft:block_state_property",
+                  "condition": "minecraft:block_state_property",
                   "block": "reithsawmod:zuccini_crop",
                   "properties": {
                     "age": "7"
                   }
                 }
               ],
-              "name": "minecraft:gold_block"
+              "name": "minecraft:diamond_block"
             },
             {
               "type": "minecraft:item",
@@ -47,20 +47,20 @@
           "name": "reithsawmod:zuccini_seed"
         }
       ],
-          "conditions": [
-            {
-              "condition": "minecraft:block_state_property",
-              "block": "reithsawmod:zuccini_crop",
-              "properties": {
-                "age": "7"
-              }
-            }
-          ]
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "reithsawmod:zuccini_crop",
+          "properties": {
+            "age": "7"
+          }
         }
-      ],
-    "functions": [
-      {
-        "function": "minecraft:explosion_decay"
-      }
-    ]
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ]
 }

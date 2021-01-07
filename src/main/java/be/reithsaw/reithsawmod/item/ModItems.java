@@ -2,6 +2,7 @@ package be.reithsaw.reithsawmod.item;
 
 import be.reithsaw.reithsawmod.ReithsawMod;
 import be.reithsaw.reithsawmod.block.ModBlocks;
+import be.reithsaw.reithsawmod.block.ModFluids;
 import be.reithsaw.reithsawmod.util.Registration;
 import jdk.nashorn.internal.ir.Block;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -72,6 +73,11 @@ public class ModItems
             Registration.ITEMS.register("zuccini_seed",
                     () -> new BlockItem(ModBlocks.ZUCCINI_CROP.get(), new Item.Properties().group(ReithsawMod.REITHSAW_TAB)));
 
+
+    public static final RegistryObject<Item> OIL_BUCKET =
+            Registration.ITEMS.register("oil_bucket",
+                    () -> new BucketItem(ModFluids.OIL_FLUID::get,
+                            new Item.Properties().group(ReithsawMod.REITHSAW_TAB).maxStackSize(1)));
 
     /* ARMOR */
 

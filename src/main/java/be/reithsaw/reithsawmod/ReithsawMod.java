@@ -1,6 +1,7 @@
 package be.reithsaw.reithsawmod;
 
 import be.reithsaw.reithsawmod.block.ModBlocks;
+import be.reithsaw.reithsawmod.block.ModFluids;
 import be.reithsaw.reithsawmod.events.ModEvents;
 import be.reithsaw.reithsawmod.item.ModItems;
 import be.reithsaw.reithsawmod.util.Config;
@@ -56,6 +57,7 @@ public class ReithsawMod
         Registration.register();
         ModItems.register();
         ModBlocks.register();
+        ModFluids.register();
 
         MinecraftForge.EVENT_BUS.register(new ModEvents());
 
