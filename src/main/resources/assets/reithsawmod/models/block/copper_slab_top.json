@@ -1,5 +1,5 @@
 {
-  "parent": "reithsawmod:block/slab_top",
+  "parent": "block/slab_top",
   "textures": {
     "bottom": "reithsawmod:block/copper_block",
     "top": "reithsawmod:block/copper_block",
