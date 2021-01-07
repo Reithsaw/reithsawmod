@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "reithsawmod:block/electrifier" },
+    "facing=south": { "model": "reithsawmod:block/electrifier", "y": 180 },
+    "facing=west": { "model": "reithsawmod:block/electrifier", "y": 270 },
+    "facing=east": { "model": "reithsawmod:block/electrifier", "y": 90 }
+  }
+}
