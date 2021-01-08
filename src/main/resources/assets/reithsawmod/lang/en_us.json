@@ -28,6 +28,8 @@
   "block.reithsawmod.copper_block": "Copper Block",
   "block.reithsawmod.copper_ore": "Copper Ore",
 
-  "itemGroup.reithsawTab": "Reithsaw Tab"
+  "itemGroup.reithsawTab": "Reithsaw Tab",
+
+  "entity.reithsawmod.buffalo": "Buffalo"
 
 }

@@ -3,6 +3,8 @@ package be.reithsaw.reithsawmod;
 import be.reithsaw.reithsawmod.block.ModBlocks;
 import be.reithsaw.reithsawmod.block.ModFluids;
 import be.reithsaw.reithsawmod.container.ModContainers;
+import be.reithsaw.reithsawmod.entity.BuffaloEntity;
+import be.reithsaw.reithsawmod.entity.ModEntityTypes;
 import be.reithsaw.reithsawmod.events.ModEvents;
 import be.reithsaw.reithsawmod.item.ModItems;
 import be.reithsaw.reithsawmod.setup.ClientProxy;
@@ -11,9 +13,13 @@ import be.reithsaw.reithsawmod.setup.ServerProxy;
 import be.reithsaw.reithsawmod.tileentity.ModTileEntities;
 import be.reithsaw.reithsawmod.util.Config;
 import be.reithsaw.reithsawmod.util.Registration;
+import be.reithsaw.reithsawmod.world.biome.ModBiomes;
+import be.reithsaw.reithsawmod.world.biome.ModSurfaceBuilders;
+import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.ModContainer;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -62,6 +68,9 @@ public class ReithsawMod
 
         proxy.init();
 
+        DeferredWorkQueue.runLater(() ->
+                GlobalEntityTypeAttributes.put(ModEntityTypes.BUFFALO.get(), BuffaloEntity.setCustomAttributes().create()));
+
         loadConfigs();
     }
 
@@ -86,8 +95,14 @@ public class ReithsawMod
         ModItems.register();
         ModBlocks.register();
         ModFluids.register();
+
+        ModBiomes.register();
+        ModSurfaceBuilders.register();
+
         ModTileEntities.register();
         ModContainers.register();
+        ModEntityTypes.register();
+
 
         // register mod event
         MinecraftForge.EVENT_BUS.register(new ModEvents());

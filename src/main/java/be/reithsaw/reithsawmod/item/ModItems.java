@@ -3,6 +3,7 @@ package be.reithsaw.reithsawmod.item;
 import be.reithsaw.reithsawmod.ReithsawMod;
 import be.reithsaw.reithsawmod.block.ModBlocks;
 import be.reithsaw.reithsawmod.block.ModFluids;
+import be.reithsaw.reithsawmod.entity.ModEntityTypes;
 import be.reithsaw.reithsawmod.util.Registration;
 import jdk.nashorn.internal.ir.Block;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -79,6 +80,11 @@ public class ModItems
                     () -> new BucketItem(ModFluids.OIL_FLUID::get,
                             new Item.Properties().group(ReithsawMod.REITHSAW_TAB).maxStackSize(1)));
 
+    public static final RegistryObject<ModSpawnEggItem> BUFFALO_SPAWNING_EGG =
+            Registration.ITEMS.register("buffalo_spawn_egg",
+                    () -> new ModSpawnEggItem(ModEntityTypes.BUFFALO, 0xF02F4A, 0X7034F1,
+                            new Item.Properties().group(ReithsawMod.REITHSAW_TAB)));
+
     /* ARMOR */
 
     public static final RegistryObject<Item> COPPER_HELMET =
@@ -100,6 +106,8 @@ public class ModItems
             Registration.ITEMS.register("copper_boots",
                     () -> new ArmorItem(ModArmorMaterial.COPPER, EquipmentSlotType.FEET,
                             new Item.Properties().group(ReithsawMod.REITHSAW_TAB)));
+
+
 
     public static void register() {}
 
